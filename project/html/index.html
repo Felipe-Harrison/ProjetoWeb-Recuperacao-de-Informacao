@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" href="../static/imgs/favicon.png" type="image/x-icon">
+    <script src="../static/js/script.js" type="application/javascript"></script>
+    <title>Vetorial Search</title>
+    {% endblock %}
+</head>
+<body>
+    <main>
+        <div class="search-container">
+            <img src="../static/imgs/Logo.png" alt="logo" height="100" width="200">
+            <form class="search-bar" name="searchBar" action="" method="get" >
+                <input type="text" name="query" id="input-search" placeholder="O que procura?">
+                <label for="input-search" id="icon-search">
+                    <i id="icon" class="fa fa-search"></i>
+                </label>
+                <button type="submit"></button>
+            </form> 
+        </div>
+        <section class="searchResult">
+            <!-- conteudo dinamico  -->
+        </section>
+        <template id="templateResult">
+            <div class="card-document" onclick="getDocumentText(this,'{document-name}')">
+                <div class="card-header">
+                    <h3>{document-name}</h3>
+                    <span>{document-sim}</span>
+                </div>
+                <div class="card-description">
+                    <p>
+                        {document-words}
+                    </p>
+                </div>
+            </div>
+        </template>
+    </main>
+</body>
+</html>

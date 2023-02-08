@@ -1,0 +1,77 @@
+.card-document {
+    height: 60%;
+    width: 100%;
+    margin: 15px 0;
+    position: relative;
+
+    background-color: #ffffff;
+    box-shadow:
+        0.8px 2.9px 3.5px -21px rgba(0, 0, 0, 0.012),
+        2.2px 7.8px 13px -21px rgba(0, 0, 0, 0.016),
+        5.4px 18.9px 30.6px -21px rgba(0, 0, 0, 0.021),
+        19px 67px 76px -21px rgba(0, 0, 0, 0.04)
+    ;
+    border: 5px solid var(--Color3-hex);
+    transition-duration: 600ms;
+    cursor: pointer;
+
+    animation: popin 0.3s ease-in;
+}
+.card-document:hover{
+    scale: 1.05;
+}
+
+.card-document:nth-child(even) > .card-header {
+    background-color: var(--Color2-hex);
+}
+.card-document:nth-child(odd) > .card-header {
+    background-color: var(--Color4-hex);
+}
+.card-document:nth-child(3n+3) > .card-header {
+    background-color: #657eb3;
+}
+
+.card-header {
+    font-family: 'Lobster', cursive !important;
+    border-bottom: 4px solid var(--Color3-hex);
+    font-size: medium;
+}
+
+.card-header > h3 {
+    margin: 0;
+    padding: 7px 0;
+}
+.card-header > span {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    color: #e3e3e3;
+}
+
+.card-description {
+    width: 90%;
+    padding: 15px 10px;
+    margin: 0 auto;
+    min-height: 52px;
+    height: fit-content;
+    overflow: hidden;
+}
+.card-description p::after{
+    content: "...";
+}
+.card-description.open p::after{
+    content: ".";
+}
+
+@keyframes popin {
+    0% {
+      transform: scale(0.2);
+    }
+    75% {
+      transform: scale(1.2);
+      animation-timing-function: easeout;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
