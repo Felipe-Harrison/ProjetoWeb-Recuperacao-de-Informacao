@@ -1,4 +1,4 @@
-# ProjetoWeb-Recuperacao-Informacao
+# ProjetoWeb-Recuperacao-de-Informacao
 
 Projeto para aplicar em website técnicas de Recuperação de informação, como TF-IDF, utlizadas por buscadores.
 
@@ -34,7 +34,7 @@ git clone https://github.com/Felipe-Harrison/ProjetoWeb-Recuperacao-Informacao
 2 - Navegue com o cmd ate a pasta, onde o repositório esta salvo
 
 ```shell
-cd ProjetoWeb-Recuperacao-Informacao
+cd ProjetoWeb-Recuperacao-de-Informacao
 ```
 3 - Faça Ativação do ambiente virtual
 
