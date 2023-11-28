@@ -36,10 +36,10 @@ git clone https://github.com/Felipe-Harrison/ProjetoWeb-Recuperacao-Informacao
 ```shell
 cd ProjetoWeb-Recuperacao-de-Informacao
 ```
-3 - Faça Ativação do ambiente virtual
+3 - Faça instalação das dependencias
 
 ```shell
-.\env\Scripts\activate
+pip install unidecode flask
 ```
 
 4 - Navegue ate a pasta do projeto e realize o comando
